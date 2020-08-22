@@ -1,0 +1,114 @@
+.about > .hero {
+	background-image: unset;
+  background-color: #EBEBEB;
+  height: 250px;
+}
+
+.intro {
+  display: flex;
+  width: auto;
+  left: 30%;
+  align-items: center;
+}
+
+.intro > img {
+  padding-right: 32px;
+}
+
+.sub-header {
+  font-family: 'Abhaya Libre', serif;
+  margin-left: 32px;
+}
+
+.sub-header p {
+  margin-bottom: 4px;
+}
+
+p {
+  max-width: 525px;
+}
+
+.main {
+  padding: 64px 256px;
+}
+
+.main {
+  padding: 20px 0px;
+}
+
+.image-container {
+  flex-direction: column;
+  align-items: center;
+}
+.image-container img {
+  width: 50%;
+}
+
+.intro {
+  margin-top: 42px;
+  left: 1%;
+}
+
+.intro > img {
+  padding-right: 4px;
+  padding-left: 4px
+}
+
+#profile-image {
+  width: 128px;
+}
+
+.hero {
+  height: 350px;
+}
+
+.main p{
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.libre {
+  font-family: 'Abhaya Libre', sans-serif;
+}
+
+.main .header-paragraph, b {
+  font-size: 25px;
+  font-family: 'Abhaya Libre', sans-serif;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  margin: 8px 32px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.primary-button {
+  color: white;
+  background-color: purple;
+  padding: 4px 16px;
+  border: none;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 32px;
+}
+
+footer {
+  margin: 32px;
+  padding: 0px;
+}
