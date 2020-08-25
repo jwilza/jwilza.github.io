@@ -1,6 +1,10 @@
-.about > .hero {
-	background-image: unset;
-  background-color: #EBEBEB;
+* {
+  /* outline: 1px dotted red; */
+}
+
+.container > .hero {
+  background-image: unset;
+  background-color: #ebebeb;
   height: 250px;
 }
 
@@ -22,6 +26,8 @@
 
 .sub-header p {
   margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 p {
@@ -32,16 +38,24 @@ p {
   padding: 64px 256px;
 }
 
-
-@media(min-width: 1600px) {
+@media (min-width: 1600px) {
   .main {
     padding: 20px 596px;
   }
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
+  .container > .hero {
+    height: 390px;
+  }
+
+  .sub-header {
+    font-family: 'Abhaya Libre', serif;
+    margin-left: 0px;
+  }
+
   .main {
-    padding: 20px 0px;
+    padding: 20px 16px;
   }
 
   .image-container {
@@ -53,17 +67,20 @@ p {
   }
 
   .intro {
-    margin-top: 42px;
+    margin-top: 25px;
     left: 1%;
+    flex-direction: column;
+    padding: 0 16px;
   }
 
   .intro > img {
     padding-right: 4px;
-    padding-left: 4px
+    padding-left: 4px;
   }
 
   #profile-image {
     width: 128px;
+    margin-bottom: 15px;
   }
 
   .hero {
@@ -71,7 +88,7 @@ p {
   }
 }
 
-.main p{
+.main p {
   font-family: 'Questrial', sans-serif;
   font-size: 20px;
   line-height: 1.6;
@@ -81,7 +98,8 @@ p {
   font-family: 'Abhaya Libre', sans-serif;
 }
 
-.main .header-paragraph, b {
+.main .header-paragraph,
+b {
   font-size: 25px;
   font-family: 'Abhaya Libre', sans-serif;
 }
@@ -120,4 +138,8 @@ p {
 footer {
   margin: 32px;
   padding: 0px;
+}
+
+a {
+  text-decoration: none;
 }
