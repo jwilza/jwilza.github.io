@@ -1,5 +1,35 @@
+/*
+  green rgb(35, 136, 100);
+  purple rgb(118, 26, 141);
+*/
+
 * {
   font-family: 'Questrial', sans-serif;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.inner-box {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.inner-box p {
+  margin-top: 5px;
+}
+
+.primary-button {
+  color: white;
+  background-color: rgb(118, 26, 141);
+  padding: 4px 16px;
+  border: none;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 body {
@@ -26,7 +56,7 @@ h1 {
   width: 75px;
   position: absolute;
   top: 20px;
-  left: 20px;
+  /* left: 20px; */
 }
 
 .nav {
@@ -52,7 +82,7 @@ h1 {
 }
 
 .nav a:hover {
-  border-bottom: 1px solid #761a8d;
+  border-bottom: 1px solid rgb(118, 26, 141);
 }
 
 .socialMedia img {
@@ -61,11 +91,13 @@ h1 {
 
 .intro {
   position: absolute;
+  padding-top: 30px;
   top: 50%;
   left: 50%;
   transform: translate(0%, -50%);
   width: 300px;
   color: black;
+  text-align: left;
 }
 
 .samples {
@@ -80,9 +112,8 @@ h1 {
 .box {
   min-width: 200px;
   width: 20%;
-  margin: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
 }
@@ -106,7 +137,7 @@ h1 {
 }
 
 .connect-header {
-  color: purple;
+  color: rgb(118, 26, 141);
   font-size: 30px;
   margin: 0px;
 }
@@ -118,10 +149,15 @@ footer {
   font-size: 20px;
 }
 
+/* mobile */
 @media (max-width: 500px) {
+  .inner-box {
+    margin-top: 50px;
+  }
+
   .intro {
     right: 10px;
-    text-align: center;
+    text-align: left;
     width: 150px;
   }
   .logo {

@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>Portfolio | About Me</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/about.css" />
+
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -21,51 +21,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body class="container about justify-center">
-    <section class="hero">
-      <img alt="diamond-shaped logo" class="logo" src="./images/logo.png" />
-
-      <!-- Navigation Section -->
-
-      <nav class="nav">
-        <a href="./project.html">Work</a>
-        <a href="./about.html">About</a>
-
-        <a
-          class="socialMedia"
-          href="https://www.linkedin.com/in/wilza-aryeetey-b11b121b2/"
-        >
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-
-        <a class="socialMedia" href="mailto:jwilza07@gmail.com">
-          <i class="far fa-envelope"></i>
-        </a>
+  <body class="container about">
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img src="/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="title">
+          <!-- <p>Case Study-2020</p> -->
+        </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="mailto:jwilza07@gmail.com"
+                ><i class="far fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/wilza-aryeetey-b11b121b2/">
+                <i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/project.html">Work</a></li>
+          </ul>
+        </div>
       </nav>
-
-      <!-- Intro Section -->
-
+    </header>
+    <section class="hero">
       <article class="intro">
-        <img alt="profile image" id="profile-image" src="./images/me.png" />
+        <img alt="profile image" id="profile-image" src="/images/me.png" />
         <div class="sub-header">
           <h1 class="name-header">About Me</h1>
           <p class="libre">
-            "Design is not just what it looks like and feels like. <br />
-            Design is how it works." -Steve Jobs
+            "Design is not just what it looks like and <br />
+            feels like. Design is how it works." -Steve Jobs
           </p>
         </div>
       </article>
     </section>
-    <aside>
-      <a href="./index.html">
-        <img alt="my logo" class="logo" src="./images/logo.png" />
-      </a>
-    </aside>
     <main class="main">
       <section class="justify-center">
-        <div>
+        <div class="content">
           <p class="header-paragraph">
-            I'm a <b>UX Designer</b> and <b>Visual Designer</b> <br />
+            I'm a <b>UX Designer</b> and <b>Visual Designer</b>
             from Atlanta, GA
           </p>
           <p>
@@ -79,15 +81,15 @@
             life. <br /><br />When I’m not sketching an idea or working on a
             project, you’ll find me painting or playing with my toddler.
           </p>
+          <br />
+          <div class="image-container">
+            <img alt="painting hobby" src="/images/image+103.png" />
+            <img alt="toy truck" src="/images/image+105.png" />
+            <img alt="toddler activity" src="/images/image+107.png" />
+          </div>
         </div>
-        <div class="image-container">
-          <img alt="painting hobby" src="./images/image+103.png" />
-          <img alt="toy truck" src="./images/image+105.png" />
-          <img alt="toddler activity" src="./images/image+107.png" />
-        </div>
-        <a href="Resume.pdf" target="_blank" class="primary-button">
-          View Resume
-        </a>
+
+        <a href="Resume.pdf" target="_blank" class="primary-button"> Resume </a>
       </section>
 
       <footer>
