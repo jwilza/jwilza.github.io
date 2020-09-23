@@ -5,6 +5,9 @@
 
 * {
   font-family: 'Questrial', sans-serif;
+  /* border-radius: 1px;
+  border-color: red;
+  border-style: dashed; */
 }
 
 .mt-32 {
@@ -46,7 +49,7 @@ h1 {
   background-size: cover;
   background-position: 25% 50%;
 
-  height: 300px;
+  height: 500px;
   width: 100%;
 
   position: relative;
@@ -102,11 +105,19 @@ h1 {
 
 .samples {
   margin-top: 100px;
-  width: 100%;
+  width: auto;
   /*height:300px;*/
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.questrial {
+  line-height: 8px;
+  font-size: 20px;
 }
 
 .box {
@@ -118,15 +129,28 @@ h1 {
   flex-direction: column;
 }
 
+.box-lg {
+  min-width: 300px;
+  width: 500px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-lg img {
+  width: 100%;
+}
+
 .box img {
   width: 100%;
 }
 
 .name-intro-header {
   font-size: 30px;
-  margin-bottom: 16px;
   font-family: 'Abhaya Libre', serif;
   margin-top: 0px;
+  margin-bottom: 0px !important;
 }
 
 .name-header {
@@ -151,8 +175,17 @@ footer {
 
 /* mobile */
 @media (max-width: 500px) {
+  .questrial {
+    line-height: 30px;
+  }
+
   .inner-box {
     margin-top: 50px;
+  }
+
+  .samples {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .intro {
@@ -161,7 +194,7 @@ footer {
     width: 150px;
   }
   .logo {
-    width: 50px;
+    /* width: 50px; */
     top: 10px;
     left: 10px;
   }
@@ -179,6 +212,18 @@ footer {
 
   .box .purple {
     margin-bottom: 0;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box-lg {
+    width: 100%;
+  }
+
+  .box-lg img {
+    width: 80%;
   }
 
   footer {
