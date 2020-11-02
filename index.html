@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/grid.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/helpers.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
@@ -33,7 +34,7 @@
         <img alt="diamond shaped logo" class="logo" src="./images/logo.png" />
       </a>
       <nav class="nav">
-        <a href="./project.html">Work</a>
+        <a href="#projects">Work</a>
         <a href="./about.html">About</a>
 
         <a class="socialMedia" href="https://www.linkedin.com/in/wilza-aryeetey-b11b121b2/">
@@ -49,12 +50,16 @@
         <h3 class="name-intro-header">Hello! I'm</h3>
         <h1 class="name-header">Wilza Aryeetey</h1>
         <br />
-        <p class="questrial">A UX Designer & Visual Designer</p>
-        <p class="questrial">based in Atlanta, GA.</p>
+        <p class="questrial font-semibold">
+          A <span class="text-gold">UX Designer</span> & <span class="text-gold">Visual Designer</span>
+        </p>
+        <p class="questrial font-semibold">
+          based in Atlanta, GA.
+        </p>
       </article>
     </section>
 
-    <section class="samples">
+    <section class="samples" id="projects">
       <div class="box">
         <div class="inner-box">
           <h1 class="connect-header">Connect</h1>
@@ -65,14 +70,24 @@
         </div>
       </div>
       <div class="box-lg">
-        <img alt="project image" src="./images/dell-mockup.png" />
+        <img alt="project image" src="./images/dell-display.png" />
       </div>
-      <!-- <div class="box">
-        <img alt="project image" src="./images/Dell1.png" />
-      </div>
+    </section>
+
+    <section class="samples">
       <div class="box">
-        <img alt="project image" src="./images/Dell2.png" />
-      </div> -->
+        <div class="inner-box">
+          <h1 class="connect-header text-gold">The Loft</h1>
+          <p style="line-height: 20px;">Video Conferencing Platform</p>
+          <br />
+          <br />
+          <a href="./the-loft.html" class="primary-button mt-32 bg-color-gold"> Case Study </a>
+        </div>
+      </div>
+      
+      <div class="box-lg">
+        <img alt="project image" src="./images/loft/minimal-mockup.png" />
+      </div>
     </section>
     <footer>
       <p>Copyright ©2020 Wilza Aryeetey</p>

@@ -1,3 +1,27 @@
+.text-gold {
+  color: #8d741a !important;
+}
+
+.bg-color-gold {
+  background-color: #8d741a !important;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-ligth {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
 .p-0 {
   padding: 0px !important;
 }
@@ -344,6 +368,12 @@
 
 .mt-80 {
   margin-top: 80px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+  background-color: red;
+  height: 10px;
 }
 
 .mr-0 {
