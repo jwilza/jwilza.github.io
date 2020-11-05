@@ -11,10 +11,6 @@ a {
   text-align: center;
 }
 
-.img-lg {
-  height: 60%;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -28,7 +24,7 @@ a {
   background-color: purple;
   padding: 4px 16px;
   border: none;
-  font-family: 'Abhaya Libre', serif;
+  font-family: "Abhaya Libre", serif;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
@@ -92,7 +88,7 @@ a {
 }
 
 .sub-header {
-  font-family: 'Abhaya Libre', serif;
+  font-family: "Abhaya Libre", serif;
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -129,7 +125,7 @@ a {
 
 .project-background-square h3 {
   margin-bottom: 0px;
-  font-family: 'Abhaya Libre', serif;
+  font-family: "Abhaya Libre", serif;
 }
 .project-background-square p {
   margin-top: 4px;
@@ -286,14 +282,14 @@ a {
 
 p,
 li {
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
 }
 
 li span {
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 .font-30 {
@@ -339,7 +335,7 @@ li span {
 .text-md {
   font-size: 30px;
   font-weight: 700;
-  font-family: 'Abhaya Libre', serif;
+  font-family: "Abhaya Libre", serif;
 }
 
 .user-persona {
@@ -354,7 +350,7 @@ li span {
 .user-persona p,
 .user-persona li {
   font-size: 12px;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
   max-width: 320px;
 }
 
