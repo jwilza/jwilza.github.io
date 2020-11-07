@@ -11,8 +11,12 @@
 .container > .hero {
   background-image: unset;
   background-color: #ebebeb;
-  height: 250px;
+  height: 500px;
   padding-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .content {
@@ -25,6 +29,20 @@
   justify-content: center;
 }
 
+.intro__img {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.intro__img > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .sub-header {
   font-family: 'Abhaya Libre', serif;
   margin-left: 64px;
@@ -33,37 +51,58 @@
 
 .sub-header p {
   margin-bottom: 4px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 30px;
+
+  max-width: 400px;
 }
 
 .main {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding: 150px 50px;
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 400px) {
   .main {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 150px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .main {
+    padding: 150px 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container > .hero{
+    height: auto;
+    padding: 150px 30px;
+  }
+
+  .sub-header {
+    margin: 0;
+    margin-top: 50px;
   }
 }
 
 /* mobile version */
 @media (max-width: 900px) {
-  .container > .hero {
+  /* .container > .hero {
     height: 390px;
-  }
+  } */
 
-  .sub-header {
+  /* .sub-header {
     font-family: 'Abhaya Libre', serif;
     margin-left: 0px;
     text-align: center;
-  }
-
-  .main {
-    padding: 20px 16px;
-  }
+  } */
 
   .image-container {
     flex-direction: column;
@@ -73,39 +112,39 @@
     width: 50%;
   }
 
-  .intro {
+  /* .intro {
     left: 1%;
     flex-direction: column;
     padding: 0 16px;
-  }
-
-  .intro > img {
-    padding-right: 4px;
-    padding-left: 4px;
-    align-self: center;
-  }
+  } */
 
   #profile-image {
     margin-bottom: 15px;
   }
 
   .hero {
-    height: 350px;
+    height: 500px;
   }
 }
 
 .main p {
   font-family: 'Questrial', sans-serif;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+main p:not(.header-paragraph) {
+  color: rgb(94, 94, 94);
 }
 
 .libre {
   font-family: 'Abhaya Libre', sans-serif;
+  font-size: 22px;
 }
 
 .header-paragraph {
   padding-bottom: 40px;
+  color: #333;
 }
 
 .main .header-paragraph,
@@ -136,7 +175,7 @@ b {
 .primary-button {
   color: white;
   background-color: purple;
-  padding: 4px 16px;
+  padding: 12px 24px;
   border: none;
   font-family: 'Abhaya Libre', serif;
   font-size: 20px;
@@ -145,11 +184,6 @@ b {
   margin: 32px;
 }
 
-footer {
-  margin-top: 100px;
-  padding: 0px;
-  text-align: center;
-}
 
 a {
   text-decoration: none;

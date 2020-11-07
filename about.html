@@ -27,50 +27,41 @@
   </head>
 
   <body class="container about">
-    <!-- NAVBAR -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="/">
-            <img src="./images/logo.png" alt="logo" />
-          </a>
-        </div>
-        <div class="title">
-          <!-- <p>Case Study-2020</p> -->
-        </div>
-        <div class="links">
-          <ul>
-            <li>
-              <a href="mailto:jwilza07@gmail.com"><i class="far fa-envelope"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/wilza-aryeetey-b11b121b2/"> <i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="/#projects">Work</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+
+    <nav class="navbar">
+
+      <a href="/" class="navbar__brand">
+        <img alt="diamond shaped logo" src="./images/logo-vector.svg" />
+      </a>
+
+      <div class="navbar__links">
+        <a class="navbar__link" href="/#projects">Work</a>
+        <a class="navbar__link" href="/about.html">About</a>
+        <a class="navbar__link navbar__social" href="https://www.linkedin.com/in/wilza-aryeetey-b11b121b2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="navbar__link navbar__social" href="mailto:jwilza07@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+
+    </nav>
+
+
     <section class="hero">
       <article class="intro">
-        <img alt="profile image" id="profile-image" src="./images/me.png" />
+        <div class="intro__img">
+          <img alt="profile image" id="profile-image" src="./images/selfie-about.png" />
+        </div>
+        
         <div class="sub-header">
           <h1 class="name-header">About Me</h1>
-          <p class="libre">
-            "Design is not just what it looks like and <br />
-            feels like. Design is how it works." -Steve Jobs
+          <p class="libre">"Design is not just what it looks like and feels like. Design is how it works." -Steve Jobs
           </p>
         </div>
       </article>
     </section>
+
     <main class="main">
       <section class="justify-center">
         <div class="content">
-          <p class="header-paragraph">
-            I'm a <b>UX Designer</b> and <b>Visual Designer</b>
-            from Atlanta, GA
-          </p>
+          <p class="header-paragraph">I'm a <b>UX Designer</b> and <b>Visual Designer</b> from Atlanta, GA</p>
           <p>
             Being an artist by trade has allowed me to create cutting edge, one-of-a-kind designs. The ability to
             captivate a user at a single glance expands far beyond what the eyes can see. Building a connection is the
@@ -80,7 +71,7 @@
             you’ll find me painting or playing with my toddler.
           </p>
           <br />
-          <div class="image-container">
+          <div class="image-container" style="display: none;">
             <img alt="painting hobby" src="./images/image+103.png" />
             <img alt="toy truck" src="./images/image+105.png" />
             <img alt="toddler activity" src="./images/image+107.png" />
@@ -89,10 +80,10 @@
 
         <a href="Resume.pdf" target="_blank" class="primary-button"> View Resume </a>
       </section>
-
-      <footer>
-        <p>Copyright ©2020 Wilza Aryeetey</p>
-      </footer>
     </main>
+
+    <footer>
+      <p>Copyright ©2020 Wilza Aryeetey</p>
+    </footer>
   </body>
 </html>

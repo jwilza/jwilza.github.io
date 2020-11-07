@@ -26,13 +26,18 @@
 .primary-button {
   color: white;
   background-color: rgb(118, 26, 141);
-  padding: 4px 16px;
+  padding: 12px 24px;
   border: none;
   font-family: 'Abhaya Libre', serif;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
+  transition: opacity .3s ease;
+}
+
+.primary-button:hover {
+  opacity: .7;
 }
 
 body {
@@ -49,17 +54,30 @@ h1 {
   background-size: cover;
   background-position: 25% 50%;
 
-  height: 500px;
+  height: 600px;
   width: 100%;
 
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.hero p {
+  margin: 0;
+  padding: 0;
+}
+
+.hero .questrial {
+  max-width: 250px;
+}
+
+
+/* 
 .logo {
   width: 100px;
   position: absolute;
   top: 20px;
-  /* left: 20px; */
+
 }
 
 .nav {
@@ -87,57 +105,102 @@ h1 {
 
 .nav a:hover {
   border-bottom: 1px solid rgb(118, 26, 141);
-}
+} */
 
 .socialMedia img {
   height: 15px;
 }
 
 .intro {
-  position: absolute;
-  padding-top: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(0%, -50%);
-  width: 300px;
-  color: black;
+  box-sizing: border-box;
+  max-width: 500px;
+  width: 100%;
+  padding-right: 50px;
   text-align: left;
 }
 
-.samples {
-  margin-top: 200px;
-  width: auto;
-  /*height:300px;*/
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: 15%;
-  margin-right: 15%;
+@media (max-width: 850px) {
+
+  .intro {
+    padding: 45px;
+  }
+
+  .hero {
+    height: 600px;
+
+    background-image:
+    linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../images/background-image.png);
+  }
+
+  .hero .questrial {
+    max-width: 300px;
+  }
+
 }
+
+@media (max-width: 400px) {
+  .intro {
+    padding: 25px;
+  }
+
+  .hero .questrial {
+    font-size: 18px;
+  }
+}
+
 
 .questrial {
-  line-height: 8px;
   font-size: 20px;
+  line-height: 1.6;
 }
 
-.box {
-  min-width: 200px;
-  width: 20%;
-  display: flex;
-  justify-content: start;
+.samples {
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 25px;
+  padding: 0 50px;
+
+  max-width: 1000px;
+  margin: 150px auto;
+  flex-wrap: wrap;
   align-items: center;
-  flex-direction: column;
+
+
+
 }
 
 .box-lg {
-  min-width: 300px;
-  width: 500px;
-  display: flex;
+  /* min-width: 300px; */
+  /* display: flex;
   justify-content: start;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
+  flex-shrink: 1;
 }
+
+@media (max-width: 925px) {
+
+  .samples {
+    grid-template-columns: 1fr;
+  }
+
+  .box-lg {
+    grid-row: 2 / -1;
+  }
+  
+}
+
+.box p {
+  margin-top: 15px;
+  line-height: 1.6;
+  max-width: 500px;
+
+  color: rgb(97, 97, 97);
+}
+
+
+
 
 .box-lg img {
   width: 100%;
@@ -148,7 +211,7 @@ h1 {
 }
 
 .name-intro-header {
-  font-size: 30px;
+  font-size: 36px;
   font-family: 'Abhaya Libre', serif;
   margin-top: 0px;
   margin-bottom: 0px !important;
@@ -157,8 +220,21 @@ h1 {
 .name-header {
   color: #761a8d;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 56px;
   margin: 0px;
+}
+
+@media (max-width: 500px) {
+
+  .name-intro-header {
+    font-size: 24px;
+
+  }
+
+  .name-header {
+    font-size: 36px;
+  }
+  
 }
 
 .connect-header {
@@ -167,18 +243,8 @@ h1 {
   margin: 0px;
 }
 
-footer {
-  text-align: center;
-  margin-top: 256px;
-  margin-bottom: 100px;
-  font-size: 20px;
-}
-
 /* mobile */
 @media (max-width: 500px) {
-  .questrial {
-    line-height: 30px;
-  }
 
   .inner-box {
     margin-top: 50px;
@@ -189,11 +255,13 @@ footer {
     margin-right: 0;
   }
 
-  .intro {
+  /* .intro {
     right: 10px;
     text-align: left;
     width: 150px;
-  }
+  } */
+
+
   .logo {
     /* width: 50px; */
     top: 10px;
