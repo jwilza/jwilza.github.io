@@ -6,10 +6,12 @@
 
 .cs {
 
+    --x-padding: 50px;
     --section-padding: 150px 50px;
     --section-padding-half: 75px 50px;
     --section-padding-half-top: 75px 30px 150px;
     --section-padding-half-bottom: 1505px 30px 75px;
+    
     --track-width: 1000px;
     --heading-font: 'Abhaya Libre', serif;
     --primary:  rgb(118, 26, 141);
@@ -18,14 +20,21 @@
 
     font-family: 'Questrial', sans-serif;
     color: rgba(99, 99, 99);
-    font-size: 18px;
+    font-size: 16px;
 
+    overflow-x: hidden;
+
+}
+
+.cs.cs-loft {
+    --primary: #8d741a;
 }
 
 @media (max-width: 500px) {
     .cs {
         font-size: 16px;
 
+        --x-padding: 30px;
         --section-padding: 100px 30px;
         --section-padding-half: 50px 30px;
         --section-padding-half-top: 50px 30px 100px;
@@ -42,6 +51,10 @@
     display: block;
 }
 
+.cs .center {
+    text-align: center;
+}
+
 .cs h1, .cs h2, .cs h3, .cs h4, .cs h5, .cs h5 {
     font-family: var(--heading-font);
     color: #333;
@@ -56,6 +69,30 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+.cs-container.large {
+    max-width: 1150px;
+}
+
+.cs-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 75px;
+}
+
+@media (max-width: 1100px) {
+    .cs-grid-2 {
+        grid-gap: 50px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 950px) {
+    .cs-grid-2 {
+        grid-gap: 75px;
+        grid-template-columns: 1fr;
+    }
 }
 
 .cs-container.small {
@@ -110,6 +147,11 @@ p.md {
     font-size: 1.3em;
 }
 
+.cs .b {
+    font-weight: bold;
+    color: #333;
+}
+
 .cs .accent {
     color: var(--primary);
 }
@@ -130,6 +172,11 @@ p.md {
     font-family: var(--heading-font);
     border-bottom: 2px solid var(--primary);
     font-weight: bold;
+}
+
+
+.cs-link--mt {
+    margin-top: 2em;
 }
 
 
@@ -289,16 +336,16 @@ p.md {
     padding: var(--section-padding-half-top);
 }
 
-.cs-analysis {
+.cs-personas, .cs-stories, .cs-analysis, .cs-analysis__action, .cs-flows, .cs-wireframes, .cs-testing, .cs-branding, .cs-mockup, .cs-preferences, .cs-conclusion {
     padding: var(--section-padding);
 }
 
-.cs-analysis__action {
-    padding: var(--section-padding);
-}
+.cs-wireframes .cs-subtitle {
 
-.cs-personas {
-    padding: var(--section-padding);
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+
 }
 
 @media (max-width: 1060px) {
@@ -375,9 +422,44 @@ p.md {
     grid-row: 2 / 3;
 }
 
+
 @media (max-width: 850px) {
    .cs-personas__persona {
        grid-template-columns: 1fr;
        padding: 50px 25px;
    }
+}
+
+
+.cs-testing .cs-title {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.cs-moodboard {
+    padding: var(--x-padding);
+}
+
+.cs-branding img, .cs-moodboard img:not(:last-child) {
+    margin-bottom: 3em;
+}
+
+.cs-moodboard .md.b {
+    margin-top: 2em;
+}
+
+.cs-styleguide {
+    padding: var(--section-padding);
+}
+
+.cs-mockup img {
+    margin-top: 4em;
+}
+
+.cs-preferences img {
+    margin: 3em auto 0;
+}
+
+.cs-preferences .cs-subtitle {
+    margin-top: 2em;
 }

@@ -1,584 +1,528 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Portfolio | Case Study</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./styles/helpers.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles/grid.css" />
-  <link rel="stylesheet" href="./styles/navbar.css" />
-  <link rel="stylesheet" href="./styles/loft.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177470020-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
 
-    gtag('config', 'UA-177470020-1')
-  </script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177470020-1"></script>
+    <script src="analytics.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/case-study.css" />
+
 </head>
+<body class="cs cs-loft">
 
-<body>
-  <!-- NAVBAR -->
-  <header>
     <nav class="navbar">
-      <div class="logo">
-        <a href="/">
-          <img src="./images/logo.png" alt="logo" />
+
+        <a href="/" class="navbar__brand">
+            <img alt="diamond shaped logo" src="./images/logo-vector.svg" />
         </a>
-      </div>
-      <div class="title">
-        <!-- <p>Case Study-2020</p> -->
-      </div>
-      <div class="links">
-        <ul>
-          <li>
-            <a href="mailto:jwilza07@gmail.com"><i class="far fa-envelope"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/wilza-aryeetey-b11b121b2/"> <i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="/#projects">Work</a></li>
-        </ul>
-      </div>
+  
+        <div class="navbar__links">
+            <a class="navbar__link" href="/#projects">Work</a>
+            <a class="navbar__link" href="/about.html">About</a>
+            <a class="navbar__link navbar__social" href="https://www.linkedin.com/in/wilza-aryeetey-b11b121b2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="navbar__link navbar__social" href="mailto:jwilza07@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+  
     </nav>
-  </header>
 
-  <!-- CONTENT -->
-  <div class="container">
-    <article class="grid">
-      <section class="col-6 justify-center-column">
-        <h1 class="sub-header text-gold connect">The Loft</h1>
-        <img alt="main dell image" src="./images/loft/minimal-mockup.png" class="img-lg pt-30" />
-        <a href="https://www.figma.com/file/MD4MW0TSZ8eus8TzK9ziY5/Portfolio-Connect-Prototype?node-id=0%3A1"
-          target="_blank" class="primary-button bg-color-gold margin-top-64">
-          Visit Prototype
-        </a>
-      </section>
-      <section class="col-6">
-        <div class="project-background-square">
-          <h3 class="text-gold font-30 pt-30">Project Background:</h3>
-          <p>
-            These are extraordinary times, and countries from all around the world are struggling to keep their economy
-            from crashing while maintaining the health and safety of their fellow citizens. A new video conferencing
-            platform called The Loft has been created to bridge the gap caused by the pandemic.
-          </p>
-          <h3 class="text-gold font-30">Objective:</h3>
-          <p>
-            Creating a desktop site for a video conferencing platform where meetings and virtual functions can be
-            organized and managed with well-established features.
-          </p>
-          <h3 class="text-gold font-30">My Role:</h3>
-          <p>UX Researcher, UX Designer</p>
-          <h3 class="text-gold font-30">Project Duration:</h3>
-          <p>4 weeks</p>
-          <h3 class="text-gold font-30">Tools:</h3>
-          <p>Figma, Google Forms, Google Sheets</p>
-        </div>
-      </section>
-    </article>
-    <!-- Problems/Solution -->
-    <article class="grid col-gap-100 margin-top-64 no-row-gap">
-      <section class="col-6 gray-background">
-        <div class="problems-square justify-left-column">
-          <h2 class="sub-header text-gold">Problems</h2>
-          <ul>
 
-            <li>The number of coronavirus cases and deaths are on the rise.</li>
-            <li>The economy is suffering as a result of businesses being forced to shut down. </li>
-            <li>There has been an increase in crime rates and mental health illnesses.</li>
-            <li>Businesses have asked their employees to work remotely from home.</li>
-            <li>
-              Many people are canceling group gatherings to comply with the CDC’s recommendation of social distancing.
-            </li>
+    <!-- PROJECT INFO -->
+    <header class="cs-header">
 
-          </ul>
+        <div class="cs-container">
+            <h1 class="cs-header__title">The Loft</h1>
+            <p class="cs-header__subtitle">These are extraordinary times, and countries from all around the world are struggling to keep their economy from crashing while maintaining the health and safety of their fellow citizens. A new video conferencing platform called The Loft has been created to bridge the gap caused by the pandemic.</p>
+            <a href="https://www.figma.com/file/58qDOE1bYyvUW7ESKkb8HL/Online-Portfolio-The-Loft-Visit-Prototype" class="cs-link">View Prototype</a>
         </div>
-      </section>
-      <section class="col-6 gray-background">
-        <div class="solution-square justify-left-column pl-50">
-          <h2 class="sub-header text-gold">Solution</h2>
-          <p>
-            Design a video conferencing platform that is user-friendly and full of interesting features that benefits
-            both working professionals and the general population.
-          </p>
-        </div>
-      </section>
-    </article>
-    <article class="flex">
-      <section class="hide-mobile">
-        <img alt="flower" src="./images/flower.png" />
-      </section>
-      <section class="process-square">
-        <h2 class="sub-header text-gold pt-45">Process</h2>
-        <p class="pb-45">
-          I really enjoyed working on this project because it involved designing a platform that could potentially help
-          mend broken bridges caused by the coronavirus pandemic. I wanted to make sure the site was feasible and
-          versatile for both professional and personal use. Prior to sketching ideas, I devoted a good chunk of my time
-          to researching current competitors and users. Once I learned about them, I began to flesh out the different
-          wireframes and mockups for The Loft. Two rounds of usability testings were performed in this project, allowing
-          potential users to interact with the design. The results gathered were used to modify the design and
-          ultimately improve the overall function of The Loft. Now let me walk you through the different stages.
-        </p>
-      </section>
-    </article>
-    <!-- User Surveys -->
-    <article class="grid gap-40">
-      <section class="col-6 user-surveys-square">
-        <h2 class="sub-header text-gold">User Surveys</h2>
-        <p>
-          Before I could start the design process, I needed to collect some valuable data via user surveys. Twenty-one
-          individuals participated in this exercise. The data collected allowed me to evaluate whether or not there is a
-          true need for a video conferencing platform, and what ways people care to use it. I anticipated the top two
-          leading video conferencing platforms would have been Zoom and FaceTime. However, the top two frequently used
-          video conferencing platforms among the 21 participants were Zoom (100%) and Skype (76.2%). I predicted Zoom
-          would be the main video conferencing platform used for personal use and Cisco WebEx would be the main platform
-          used for work. However, Zoom turned out to be the leading video conferencing platform for both personal use
-          and work. There has been an increase in the use of video conferencing platforms since the rise of
-          COVID-19, which supports the growing need for a video conferencing platform such as The Loft.
-        </p>
-      </section>
-      <section class="col-6 justify-center-column gray-border p-15">
-        <h2 class="sub-header green">Results</h2>
-        <ul>
-          <li>
-            Before the start of COVID-19, roughly 24% of participants used video conferencing platforms for more than
-            an hour.
-          </li>
-          <li>
-            After the rise of COVID-19, roughly 67% of participants use video conferencing platforms for more than an
-            hour.
-          </li>
-          <li>The top 3 features: sharing screens (76.2%), mute feature (52.4%), turn off camera (52.4%).</li>
-          <li>The top 3 video conferencing platforms are Zoom, Skype, and Google Hangouts.</li>
-          <li>100% of my participants do not pay a monthly fee to use their video conferencing platform.</li>
-          <li>71.4% of participants use Zoom and 14.3% of participants use Skype for personal use.</li>
-          <li>52.4% of participants use Zoom and 19% of participants use Cisco WebEx/Appear.in at work.</li>
-          <li>95.2% of participants use a laptop to access a video conferencing platform.</li>
 
-        </ul>
-      </section>
-    </article>
-    <!-- User Data -->
-    <article class="grid">
-      <section class="col-6 gray-background justify-center-column padding-32">
-        <img alt="chart1" src="./images/loft/graph1.png" class="img-rectangle-xl shadow" />
-      </section>
-      <section class="col-6 gray-background justify-center-column padding-32">
-        <img alt="chart2" src="./images/loft/graph2.png" class="img-rectangle-xl shadow" />
-      </section>
-      <section class="col-6 gray-background justify-center-column padding-32">
-        <img alt="chart3" src="./images/loft/graph3.png" class="img-rectangle-xl shadow" />
-      </section>
-      <section class="col-6 padding-32">
-        <div class="gray-border justify-center-column margin-top-16">
-          <h2 class="sub-header green">Take Away Message</h2>
-          <p>
-            Users value free storage space on the cloud platform. They mostly use the platform for personal use and/or
-            work. Many users share pictures and documents with other people through cloud platforms.
-          </p>
+        <div class="cs-header__image">
+            <img alt="main dell image" src="./images/loft/minimal-mockup.png">
         </div>
-      </section>
-    </article>
-    <!-- User Personas-->
-    <article class="grid">
-      <section class="col-6 justify-left-column p-60">
-        <!-- Competitive Analysis / Plan of Action -->
-        <h2 class="sub-header text-gold text-left pb-15">Competitive Analysis</h2>
-        <p class="pb-15">
-          Next, I conducted a competitive analysis on the three most popular video conferencing platforms among the
-          survey participants: Zoom, Skype, and Google Hangouts. If I had more time, I would have included at least two
-          more competitors to the list. Since I use a few of these platforms myself, I was familiar with how they
-          typically work. However, I wish I also had more time to navigate on other video conferencing sites to see how
-          each organized data on a page.
-        </p>
-        <p class="pb-15">
-          If I had more time, I would have included at least two
-          more competitors to the list. Since I use a few of these platforms myself, I was familiar with how they
-          typically work.
-        </p>
-        <p class="pb-15">
-          However, I wish I also had more time to navigate on other video conferencing sites to see how
-          each organized data on a page.
-        </p>
-      </section>
-      <section class="col-6 justify-center-column center-row">
-        <div class="gray-border p-35">
-          <h2 class="sub-header green align-bullets text-center">Plan of Action</h2>
-          <p class="sub-header-undertext align-bullets">
-            Ways to set the new video conferencing platform apart that stands out from its competitors:
-          </p>
-          <br />
-          <ul>
-            <li>User friendly</li>
-            <li>Suitable for work and personal use</li>
-            <li>All features made available to users</li>
-            <li>Aside from the Waiting Room, there is a Break Room for games</li>
-            <li>Companies have access to free remote training sessions for all employees</li>
-          </ul>
-        </div>
-      </section>
-    </article>
-    <!-- User Stories -->
-    <article class="grid gray-background">
-      <section class="col-4 justify-center-column center-row p-20">
-        <div class="ml-10">
-          <h2 class="sub-header text-gold">User Personas</h2>
-          <p>
-            Then I used the data collected from both the user surveys and competitive analysis to create user personas.
-            This helped to bring the project to life by seeing a realistic representation of the key audience.
-        </div>
-      </section>
-      <section class="col-4 padding-32">
-        <div class="user-persona shadow">
-          <img alt="user-persona1" class="img-circle" src="./images/loft/AngelFace.png" />
-          <div class="text-left">
-            <h3 class="green">Angel Montes</h3>
-            <div>
-              <p><b>Age:</b>32 /<b>Location</b> Quincy, Massachusetts</p>
-              <p><b>Product:</b> Zoom, Cisco WebEx</p>
+
+
+        <div class="cs-header__details">
+
+            <div class="cs-header__detail">
+                <h3>Objective</h3>
+                <p>Creating a desktop site for a video conferencing platform where meetings and virtual functions can be organized and managed with well-established features.</p>
+            </div>
+            
+            <div class="cs-header__detail">
+                <h3>My Role</h3>
+                <p>UX Researcher, UX Designer</p>
+            </div>
+            
+            <div class="cs-header__detail">
+                <h3>Project Duration</h3>
+                <p>4 weeks</p>
+            </div>
+            
+            <div class="cs-header__detail">
+                <h3>Tools</h3>
+                <p>Figma, Google Forms, Google Sheets</p>
             </div>
 
-            <br />
-            <h3 class="green">Bio</h3>
-            <p>
-              Angel is a hardworking individual. He works remotely at this time and uses Cisco WebEx to connect with
-              co-workers. Meetings are held on a daily basis during the week. In his downtime, he plays basketball with
-              his boys.
-            </p>
 
-            <br />
-            <div class="text-left">
-              <h3 class="green">Goals</h3>
-              <ul class="ul-simple">
-                <li>- Organize meetings with team members stationed across the country</li>
-                <li>- Stay connected with family and friends</li>
-                <li>- Collaborate with co-workers on group projects</li>
-              </ul>
-              <br />
-              <h3 class="green">Frustrations</h3>
-              <ul class="ul-simple">
-                <li>- Poor audio quality</li>
-                <li>- Poor video quality</li>
-                <li>- Internet connection required</li>
-              </ul>
+        </div>
+
+    </header>
+
+
+    <!-- PROBLEM -->
+    <section class="cs-problem">
+
+        <div class="cs-container">
+
+            <div class="cs-snap-left">
+                <h2 class="cs-title">Problems</h2>
+
+                <ul>
+                    <li>The number of coronavirus cases and deaths are on the rise.</li>
+                    <li>The economy is suffering as a result of businesses being forced to shut down. </li>
+                    <li>There has been an increase in crime rates and mental health illnesses.</li>
+                    <li>Businesses have asked their employees to work remotely from home.</li>
+                    <li>Many people are canceling group gatherings to comply with the CDC’s recommendation of social distancing.</li>
+                </ul>
             </div>
-            <br />
-            <p class="green quote">
-              "Thanks to Zoom I can stay connected with my friends"
-            </p>
-          </div>
+
+            
+
         </div>
-      </section>
-      <section class="col-4 padding-32">
-        <div class="user-persona shadow">
-          <img alt="user-persona2" class="img-circle" src="./images/loft/Laurenface.png" />
-          <div class="text-left">
-            <h3 class="green">Lauren Baker</h3>
-            <div>
-              <p><b>Age:</b>26 /<b>Location</b> Brooklyn, New York</p>
-              <p><b>Product:</b> Google Hangouts</p>
+
+    </section>
+
+
+    <!-- SOLUTION -->
+    <section class="cs-solution">
+        <img class="cs-solution__img" alt="flower" src="./images/flower.png" />
+
+        <div class="cs-container">
+
+            <div class="cs-snap-right">
+                <h2 class="cs-title">Solution</h2>
+
+                <p>Design a video conferencing platform that is user-friendly and full of interesting features that benefits both working professionals and the general population.</p>
             </div>
-            <br />
-            <h3 class="green">Bio</h3>
-            <p>
-              Lauren is a busy graduate student studying to be an Occupational Therapist. She is constantly reading and
-              working on her next assignment. Her favorite hobbies are swimming and dancing.
-            </p>
-            <br />
-            <div>
-              <h3 class="green">Goals</h3>
-              <ul class="ul-simple">
-                <li>- Quickly send IM messages to friends</li>
-                <li>- Collaborate with other students on group project</li>
-              </ul>
-              <br />
-              <h3 class="green">Frustrations</h3>
-              <ul class="ul-simple">
-                <li>- Poor audio quality</li>
-                <li>- Video is often blurry</li>
-                <li>- Internet connection required</li>
-              </ul>
-              <br />
-              <p class="green quote">"Since most of my classmates have Gmail, we stay in touch via Google Hangouts."</p>
+
+        
+        </div>
+    </section>
+
+
+    <!-- PROCESS -->
+    <section class="cs-process">
+
+        <div class="cs-container">
+
+            <div class="cs-snap-left">
+                <h2 class="cs-title">Process</h2>
+                <p class="md">I really enjoyed working on this project because it involved designing a platform that could potentially help mend broken bridges caused by the coronavirus pandemic. I wanted to make sure the site was feasible and versatile for both professional and personal use. Prior to sketching ideas, I devoted a good chunk of my time to researching current competitors and users. Once I learned about them, I began to flesh out the different wireframes and mockups for The Loft. Two rounds of usability testings were performed in this project, allowing potential users to interact with the design. The results gathered were used to modify the design and ultimately improve the overall function of The Loft. Now let me walk you through the different stages.</p>
             </div>
-          </div>
-        </div>
-      </section>
-    </article>
-    <!-- User Flows -->
-    <article class="grid double-box">
-      <section class="col-6 justify-center-column pt-45">
-        <div>
-          <h2 class="sub-header text-gold">User Stories</h2>
-          <p>
-            After constructing the user personas, I took time to write up user stories in Google Sheets.
-          </p>
-          <p>
-            The user stories helped me focus on the functional overview of what The Loft will be able to do for users.
-          </p>
-        </div>
-      </section>
-      <section class="col-6 justify-center-column p-45">
-        <div>
-          <h2 class="sub-header">Tasks of High Importance</h2>
-          <p>1) Sign up for an account.</p>
-          <p>2) Log in and out of an account.</p>
-          <p>3) Schedule a meeting via a participant’s email. </p>
-          <p>4) Mute self during a conference call. </p>
-          <p>5) Share screen during a conference call. </p>
-        </div>
-      </section>
-    </article>
-    <!-- Wireframes -->
-    <article class="justify-left-column gray-background">
-      <div class="mx-auto pt-40 pb-40">
-        <h2 class="sub-header text-gold">User Flows</h2>
-        <p>
-          Using the user stories, I sketched out the user flows. The user flows helped me understand and anticipate the
-          steps that a user takes in order to complete a specific task. I sketched them out on paper and finalized them
-          digitally in Figma.
-        </p>
 
-        <br />
-        <section class="margin-bottom-32">
-          <p>Schedule a meeting with a co-worker:</p>
-          <img alt="user-flow1" src="./images/loft/user-flow1.png" class="img-rectangle-lg shadow" />
-        </section>
-        <div class="justify-center-column pb-0">
-          <a href="https://www.figma.com/file/KvQ7EhW3eY5hZiopDajDJL/Portfolio-Connect-User-Flow" target="_blank"
-            class="primary-button">
-            Visit User Flows
-          </a>
         </div>
-      </div>
-    </article>
-    <!-- background image -->
-    <article class="justify-left-column mt-50 pt-0 mb-50 pb-0">
-      <div class="mx-auto">
-        <h2 class="sub-header text-gold">Wireframes</h2>
-        <p>
-          Once I narrowed down the steps for each task, I was able to sketch out different wireframes. After sketching
-          my design on paper, I constructed the digital version in Figma.
-        </p>
-      </div>
-    </article>
-    <!-- Move File Task -->
-    <article class="gray-background padded-section padding-top-32">
-      <h2 class="sub-header center-text margin-bottom-32">Samples: Signing up for account</h2>
-      <!-- REPLACE IMAGES -->
-      <section class="grid">
-        <div class="col-6 justify-center-column">
-          <img alt="wire-frame0" class="margin-bottom-32 img-xl shadow" src="./images/loft/wireframe1.png" />
-          <img alt="wire-frame1" src="./images/loft/wireframe3.png" class="img-xl shadow" />
-        </div>
-        <div class="col-6 justify-center-column">
-          <img alt="wire-frame2" class="margin-bottom-32 img-xl shadow" src="./images/loft/wireframe2.png" />
-          <img alt="wire-frame3" src="./images/loft/wireframe4.png" class="img-xl shadow" />
-        </div>
-        <div class="col-12 justify-center-column">
-          <a href="https://www.figma.com/file/4wrXxGZavbjqhsItshy7Yd/Visit-Wireframe" target="_blank"
-            class="primary-button">
-            Visit Wireframes
-          </a>
-        </div>
-      </section>
-    </article>
-    <!-- Usability I-->
-    <article class="justify-center-column mt-45">
-      <h2 class="sub-header text-gold center-text">Usability Testing I</h2>
-      <div class="grid">
-        <section class="col-6 justify-center-column">
-          <div>
-            <p>
-              Once I finished the digital wireframes in Figma, I made a clickable prototype that would later be used to
-              perform usability testing on three potential users. Each participant was asked to complete the 5 tasks
-              listed below. The tasks chosen were based upon the survey participants' response towards the top features
-              they used in video conferencing platforms.
-            </p>
-            <div>
-              <p>1) Sign up for an account using an email address and a password.</p>
-              <p>2) Log out from the homepage and then log in using email address and password.</p>
-              <p>3) Schedule a meeting using the participant’s email address.</p>
-              <p>4) Mute yourself (name: Derrick Brown) during a conference call.</p>
-              <p>5) Share screen 2 with colleagues.</p>
+
+    </section>
+
+
+    <!-- RESULTS -->
+    <section>
+        <div class="cs-results">
+
+            <div class="cs-container">
+                <div class="cs-snap-center">
+                    <h2 class="cs-title">User Surveys</h2>
+                    <p class="md">Before I could start the design process, I needed to collect some valuable data via user surveys. Twenty-one individuals participated in this exercise. The data collected allowed me to evaluate whether or not there is a true need for a video conferencing platform, and what ways people care to use it. I anticipated the top two leading video conferencing platforms would have been Zoom and FaceTime. However, the top two frequently used video conferencing platforms among the 21 participants were Zoom (100%) and Skype (76.2%). I predicted Zoom would be the main video conferencing platform used for personal use and Cisco WebEx would be the main platform used for work. However, Zoom turned out to be the leading video conferencing platform for both personal use and work. There has been an increase in the use of video conferencing platforms since the rise of COVID-19, which supports the growing need for a video conferencing platform such as The Loft.</p>
+                </div>
             </div>
-          </div>
-        </section>
-        <section class="col-6 justify-center-column">
-          <p>
-            In the beginning, I predicted all three participants would have difficulties with scheduling a meeting
-            simply because there are several buttons on the dashboard. However, that was not the case. In fact, all
-            three participants successfully completed task 1, 2, 3, & 5 on their first try. For task 4 (mute yourself),
-            one participant clicked the microphone, which is found in the right sidebar beside the name Derrick Brown,
-            instead of selecting the microphone button located at the bottom. This was no mistake of the participant,
-            but rather of the designer. I had forgotten to include this route when producing the clickable prototype.
-          </p>
-        </section>
-      </div>
-    </article>
-    <article class="grid">
-      <section class="col-5 justify-center-column">
-        <div class="gray-border p-35 mx-auto">
-          <h2 class="sub-header green pb-15 text-center">
-            Lessons Learned <br />
-            from Usability Testing I
-          </h2>
-          <ul>
-            <li>
-              Potential users can help a designer pick-up on a mistake and/or uncover new ways for completing a task
-            </li>
-            <li>Users can navigate quickly on sites that seem familiar to them.</li>
-            <li>Apart from colors, images also play a role in creating a particular vibe/mood on a site.</li>
-
-          </ul>
+    
+            <div class="cs-container">
+    
+                <div class="cs-snap-center">
+                    <h2 class="cs-subtitle">Results</h2>
+                    <ul class="cs-list">
+                        <li>Before the start of COVID-19, roughly 24% of participants used video conferencing platforms for more than an hour.</li>
+                        <li>After the rise of COVID-19, roughly 67% of participants use video conferencing platforms for more than an hour.</li>
+                        <li>The top 3 features: sharing screens (76.2%), mute feature (52.4%), turn off camera (52.4%).</li>
+                        <li>The top 3 video conferencing platforms are Zoom, Skype, and Google Hangouts.</li>
+                        <li>100% of my participants do not pay a monthly fee to use their video conferencing platform.</li>
+                        <li>71.4% of participants use Zoom and 14.3% of participants use Skype for personal use.</li>
+                        <li>52.4% of participants use Zoom and 19% of participants use Cisco WebEx/Appear.in at work.</li>
+                        <li>95.2% of participants use a laptop to access a video conferencing platform.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
         </div>
-      </section>
-      <section class="col-7 justify-center-column">
-        <div class=" p-35 mx-auto">
-          <h2 class="sub-header text-left pl-20">Updates Made to Wireframe</h2>
-          <p>
-            Clickable prototype updated to allow a user to mute himself/herself by clicking on the microphone found in
-            the right sidebar while on a video call.
-          </p>
-        </div>
-      </section>
-    </article>
-    <!-- Branding -->
-    <div class="grid p-50 gray-background">
-      <section class="col-6 mb-20">
-        <h2 class="sub-header text-gold">Branding</h2>
-        <p>
-          Prior to producing the high-fidelity mockup, there needed to be a clear understanding of the brand and its
-          overall mission. The purpose of The Loft is to foster a space where relationships can be formed and
-          strengthened. Whether for professional or personal use, this video conferencing platform needed to be a space
-          where individuals feel comfortable and secure. For this reason, the color palette consisted of vibrants colors
-          such as mustard-gold color and turquoise and also featured a wide range of gray tones. Below is the production
-          of the final moodboard.
-        </p>
-        <br />
-        <p>
-          In addition to the color palette, I had to select two fonts that not only worked harmoniously together but
-          also matched with this project. Reem Kufi was selected as the brand’s primary typeface, and Open Sans was the
-          complimentary typeface used to create contrast and visual hierarchy.
-        </p>
-        <br />
-        <p>
-          All the vital information pertaining to the logo and the overall brand was outlined in the style guide.
-        </p>
-        <br>
-        <!-- REPLACE LINK -->
-        <a href="https://www.figma.com/file/OvkYPfAMytq13oyWUHruGs/Connect-Visit-Mockup-Portfolio" target="_blank"
-          class="primary-button">
-          Visit Style Guide
-        </a>
-      </section>
-      <section class="col-6">
-        <!-- REPLACE IMAGES -->
-        <img alt="connect-logo" src="./images/loft/Moodboard2.png" class="shadow" />
-      </section>
-    </div>
-
-
-    <!-- Mockup -->
-    <article class="grid margin-64">
-      <section class="col-6 justify-left-column">
-        <h2 class="sub-header text-gold">High-Fidelity Mockup</h2>
-        <p>
-          The information gathered from the style guide allowed me to proceed with the high-fidelity mockup. All the
-          changes that were made to the wireframe after the usability testing were incorporated within this stage as
-          well. After designing the high-fidelity mockup, I constructed the clickable prototype.
-        </p>
-        <br />
-        <div class="flex" style="width: 100%; align-items: center; justify-content: left;">
-          <a href="https://www.figma.com/file/OvkYPfAMytq13oyWUHruGs/Connect-Visit-Mockup-Portfolio" target="_blank"
-            class="primary-button">
-            Visit Mockup
-          </a>
-        </div>
-      </section>
-      <section class="col-6 justify-center-column">
-        <!-- <img alt="dell mockup" src="./images/dell-mockup.png" /> -->
-        <img alt="project image" src="./images/loft/minimal-dell.png" class="img-lg" />
-      </section>
-    </article>
-
-    <!-- Preference Test -->
-    <article class="grid">
-      <section class="col-6">
-        <div class="justify-center-column gray-background p-50">
-          <h2 class="sub-header text-gold">Usability Testing II</h2>
-          <p>
-            Another group of individuals participated in the second round of usability testing. All three potential
-            users completed the five tasks successfully. However, two out of the three participants failed to correctly
-            answer what the site was about within the first 30 seconds of being on the landing page. The participants
-            focused first on pictures before looking at the words on a page, which explains why many designers place
-            words on top of an image. This method is very effective because it forces the users to direct their
-            attention to the text on a page.
-          </p>
-          <div class="flex mt-60" style="justify-content: center; height: 100%;">
-            <img alt="project image" src="./images/loft/minimal-dell-display-mockup.png" class="img-lg" />
-          </div>
+    
+        <div class="cs-results__figures">
+            <img alt="chart1" src="./images/loft/graph1.png">
+    
+            <img alt="chart2" src="./images/loft/graph2.png">
+    
+            <img alt="chart3" src="./images/loft/graph3.png">
         </div>
 
-      </section>
-      <section class="col-6  flex flex-col items-center justify-between">
-        <div class="flex">
-          <div class="gray-border p-80" style="height: auto;">
-            <h2 class="sub-header green text-center">Lessons Learned</h2>
-            <br>
-            <ul class="ul-spaced">
-              <li>Users look at images before texts.</li>
-              <li>Users don’t care to read much on a landing page; they mostly scan through it all.</li>
-            </ul>
-          </div>
+        <div class="cs-results__takeaways">
+            <div class="cs-container">
+                <div class="cs-snap-center">
+                    <h3 class="cs-subtitle">Take Away Message</h3>
+                    <p class="md">Users value free storage space on the cloud platform. They mostly use the platform for personal use and/or work. Many users share pictures and documents with other people through cloud platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- COMPETITIVE ANALYSIS -->
+    <section>
+
+        <div class="cs-analysis cs-bg-alt">
+            <div class="cs-container">
+                <div class="cs-snap-left">
+                    <h2 class="cs-title">Competitive Analysis</h2>
+                    <p class="md">Next, I conducted a competitive analysis on the three most popular video conferencing platforms among the survey participants: Zoom, Skype, and Google Hangouts. If I had more time, I would have included at least two more competitors to the list. Since I use a few of these platforms myself, I was familiar with how they typically work. However, I wish I also had more time to navigate on other video conferencing sites to see how each organized data on a page.</p>
+                    <p class="md">If I had more time, I would have included at least two more competitors to the list. Since I use a few of these platforms myself, I was familiar with how they typically work.</p>
+                    <p class="md">However, I wish I also had more time to navigate on other video conferencing sites to see how each organized data on a page.</p>
+                </div>
+            </div>
         </div>
 
-        <div class="flex">
-          <div class="gray-border p-80" style="height: auto;">
-            <h2 class="sub-header green text-center">Updates Made to <br> High-Fidelity Mockup</h2>
-            <br>
-            <ul class="ul-spaced">
-              <li>On the landing page, words with high importance were bolded.</li>
-              <li>On the landing page, text describing The Loft was moved to the top of an image.</li>
-            </ul>
-          </div>
+        <div class="cs-analysis__action">
+
+            <div class="cs-container">
+                <div class="cs-snap-right">
+                    <h3 class="cs-subtitle">Plan of Action</h3>
+                    <p class="md">Ways to set the new cloud storage apart that stands out from its competitors:</p>
+                    <ul class="cs-list">
+                        <li>User friendly</li>
+                        <li>Suitable for work and personal use</li>
+                        <li>All features made available to users</li>
+                        <li>Aside from the Waiting Room, there is a Break Room for games</li>
+                        <li>Companies have access to free remote training sessions for all employees</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
-      </section>
-    </article>
+    </section>
+    
+    <!-- USER PERSONAS -->
+    <section class="cs-personas cs-bg-alt">
+
+        <div class="cs-container">
+            <div class="cs-snap-center">
+                <h2 class="cs-title">User Personas</h2>
+                <p class="md">Then I used the data collected from both the user surveys and competitive analysis to create user personas. This helped to bring the project to life by seeing a realistic representation of the key audience.</p>
+            </div>
+        </div>
+
+        <div class="cs-personas__persona">
+
+            <div class="cs-personas__profile">
+                <img alt="user-persona1" src="./images/loft/AngelFace.png" />
+            </div>
+            
+            <div class="cs-personas__group cs-personas__name">
+                <h4>Angel Montes</h4>
+                <p><span>Age: </span>32</p>
+                <p><span>Location: </span> Quincy, Massachusetts</p>
+                <p><span>Product:</span> Zoom, Cisco WebEx</p>
+            </div>
+            
+            <div class="cs-personas__group">
+                <h4>Bio</h4>
+                <p>Angel is a hardworking individual. He works remotely at this time and uses Cisco WebEx to connect with co-workers. Meetings are held on a daily basis during the week. In his downtime, he plays basketball with his boys.</p>
+            </div>
+            
+            <div class="cs-personas__group">
+                <h4>Goals</h4>
+                <ul>
+                    <li>Organize meetings with team members stationed across the country</li>
+                    <li>Stay connected with family and friends</li>
+                    <li>Collaborate with co-workers on group projects</li>
+                </ul>
+            </div>
+            
+            <div class="cs-personas__group">
+                <h4>Goals</h4>
+                <ul>
+                    <li>Poor audio quality</li>
+                    <li>Poor video quality</li>
+                    <li>Internet connection required</li>
+                </ul>
+            </div>
+
+            <h5 class="cs-personas__quote">"Thanks to Zoom I can stay connected with my friends"</h5>
+            
+        </div>
+
+        <div class="cs-personas__persona">
+
+            <div class="cs-personas__profile">
+
+                <img alt="user-persona2" src="./images/loft/Laurenface.png" />
+
+            </div>
+
+            <div class="cs-personas__group cs-personas__name">
+                <h4>Lauren Baker</h4>
+                <p><span>Age: </span>26</p>
+                <p><span>Location: </span> Brooklyn, New York</p>
+                <p><span>Product:</span> Google Hangouts</p>
+            </div>
+            
+            <div class="cs-personas__group">
+                <h4>Bio</h4>
+                <p>Lauren is a busy graduate student studying to be an Occupational Therapist. She is constantly reading and working on her next assignment. Her favorite hobbies are swimming and dancing.</p>
+            </div>
+            
+            <div class="cs-personas__group">
+                <h4>Goals</h4>
+                <ul>
+                    <li>Quickly send IM messages to friends</li>
+                    <li>Collaborate with other students on group project</li>
+                </ul>
+            </div>
+            
+            <div class="cs-personas__group">
+                <h4>Goals</h4>
+                <ul>
+                    <li>Poor audio quality</li>
+                    <li>Video is often blurry</li>
+                    <li>Internet connection required</li>
+                </ul>
+            </div>
+
+            <h5 class="cs-personas__quote">"Since most of my classmates have Gmail, we stay in touch via Google Hangouts."</h5>
+            
+        </div>
+    
+
+    </section>
 
 
-    <!-- Conclusion -->
-    <article class="padding-top-32 flex flex-col items-center justify-center">
-      <div class="p-80" style="height: auto;">
-        <h2 class="sub-header text-gold">Conclusion</h2>
-        <br>
-        <p>
-          Though it would be nice to design a platform that surpasses the current competitors. The most important
-          objective is to create something useful and meaningful. I hope to leave a mark and make a difference in the
-          lives of others.
-        </p>
-        <p>
-          There’s nothing more rewarding than knowing that via a platform such as The Loft, people are
-          able to reconnect with family and friends during a pandemic where social distancing is crucial.
-        </p>
-      </div>
-    </article>
-  </div>
+    <!-- USER STORIES/HIGH IMPORTANCE TASKS -->
+    <section class="cs-stories">
+        <div class="cs-container large">
+            <div class="cs-grid-2">
+                
+                <div>
+                    <h2 class="cs-title">User Stories</h2>
+                    <p class="md">After constructing the user personas, I took time to write up user stories in Google Sheets.</p>
+                    <p class="md">The user stories helped me focus on the functional overview of what The Loft will be able to do for users.</p>
+                </div>
 
-  <footer class="text-center">
-    <p>Copyright ©2020 Wilza Aryeetey</p>
-  </footer>
+                <div>
+                    <h2 class="cs-title">Tasks of High Importance</h2>
+                    <ol class="cs-list">
+                        <li>Sign up for an account.</li>
+                        <li>Log in and out of an account.</li>
+                        <li>Schedule a meeting via a participant’s email.</li>
+                        <li>Mute self during a conference call.</li>
+                        <li>Share screen during a conference call.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- USER FLOWS -->
+    <section class="cs-flows cs-bg-alt">
+        <div class="cs-container">
+            <div class="cs-snap-center">
+                <h2 class="cs-title">User Flows</h2>
+                <p class="md">Using the user stories, I sketched out the user flows. The user flows helped me understand and anticipate the steps that a user takes in order to complete a specific task. I sketched them out on paper and finalized them digitally in Figma.</p>
+                <p class="md">Schedule a meeting with a co-worker:</p>
+                <img alt="user-flow1" src="./images/loft/user-flow1.png">
+                <a href="https://www.figma.com/file/BI1OD63ITiXLo3FsvwGVyB/Online-Portfolio-The-Loft-Visit-User-Flows" target="_blank" class="cs-link cs-link--mt">View Prototype</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WIREFRAMES -->
+    <section class="cs-wireframes">
+
+
+        <div class="cs-container">
+            <div class="cs-snap-center">
+                <h2 class="cs-title">Wireframes</h2>
+                <p class="md">Once I narrowed down the steps for each task, I was able to sketch out different wireframes. After sketching my design on paper, I constructed the digital version in Figma.</p>
+                <a href="https://www.figma.com/file/apF4i0xycGfOSyooid9hTg/Online-Portfolio-The-Loft-Visit-Wireframes" target="_blank" class="cs-link cs-link--mt">View Wireframes</a>
+            </div>
+        </div>
+
+        <div class="cs-container large">
+
+            <h3 class="cs-subtitle">Samples: Signing up for account</h3>
+
+            <div class="cs-grid-2">
+                <img alt="wire-frame0" src="./images/loft/wireframe1.png">
+                <img alt="wire-frame1" src="./images/loft/wireframe2.png">
+                <img alt="wire-frame2" src="./images/loft/wireframe3.png">
+                <img alt="wire-frame3" src="./images/loft/wireframe4.png">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- CS TESTING -->
+    <section class="cs-testing cs-bg-alt">
+
+        <div class="cs-container large">
+
+            <h2 class="cs-title">Usability Testing I</h2>
+
+            <div class="cs-grid-2">
+
+                <div>
+                    <p class="md">Once I finished the digital wireframes in Figma, I made a clickable prototype that would later be used to perform usability testing on three potential users. Each participant was asked to complete the 5 tasks listed below. The tasks chosen were based upon the survey participants' response towards the top features they used in video conferencing platforms.</p>
+
+                    <ol class="cs-list">
+                        <li>Sign up for an account using an email address and a password.</li>
+                        <li>Log out from the homepage and then log in using email address and password.</li>
+                        <li>Schedule a meeting using the participant’s email address.</li>
+                        <li>Mute yourself (name: Derrick Brown) during a conference call.</li>
+                        <li>Share screen 2 with colleagues.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <p class="md">n the beginning, I predicted all three participants would have difficulties with scheduling a meeting simply because there are several buttons on the dashboard. However, that was not the case. In fact, all three participants successfully completed task 1, 2, 3, & 5 on their first try. For task 4 (mute yourself), one participant clicked the microphone, which is found in the right sidebar beside the name Derrick Brown, instead of selecting the microphone button located at the bottom. This was no mistake of the participant, but rather of the designer. I had forgotten to include this route when producing the clickable prototype.</p>
+                </div>
+
+                <div>
+                    <h3 class="cs-subtitle">Lessons Learned from Usability Testing I</h3>
+                    <ul class="cs-list">
+                        <li>Potential users can help a designer pick-up on a mistake and/or uncover new ways for completing a task</li>
+                        <li>Users can navigate quickly on sites that seem familiar to them.</li>
+                        <li>Apart from colors, images also play a role in creating a particular vibe/mood on a site.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="cs-subtitle">Updates Made to Wireframe</h3>
+                    <p class="md">Clickable prototype updated to allow a user to mute himself/herself by clicking on the microphone found in the right sidebar while on a video call.</p>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- CS BRANDING -->
+    <section class="cs-branding">
+
+        <div class="cs-container">
+            <div class="cs-snap-left">
+                <h2 class="cs-title">Branding</h2>
+                <p class="md">Prior to producing the high-fidelity mockup, there needed to be a clear understanding of the brand and its overall mission. The purpose of The Loft is to foster a space where relationships can be formed and strengthened. Whether for professional or personal use, this video conferencing platform needed to be a space where individuals feel comfortable and secure. For this reason, the color palette consisted of vibrants colors such as mustard-gold color and turquoise and also featured a wide range of gray tones. Below is the production of the final moodboard.</p>
+                <p class="md">In addition to the color palette, I had to select two fonts that not only worked harmoniously together but also matched with this project. Reem Kufi was selected as the brand’s primary typeface, and Open Sans was the complimentary typeface used to create contrast and visual hierarchy.</p>
+                <p class="md">All the vital information pertaining to the logo and the overall brand was outlined in the style guide.</p>
+                <a href="https://www.figma.com/file/alM2PwOe14wDnzKbeoX4wx/Online-Portfolio-Visit-Style-Guide" target="_blank" class="cs-link cs-link--mt">View Style Guide</a>
+
+                <img alt="connect-logo" src="./images/loft/Moodboard2.png" style="margin-top: 3em">
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- HIGH FIDELITY MOCKUPS -->
+    <section class="cs-mockup cs-bg-alt">
+        <div class="cs-container">
+            <div class="cs-snap-center">
+                <h2 class="cs-title">High-Fidelity Mockup</h2>
+                <p class="md">The information gathered from the style guide allowed me to proceed with the high-fidelity mockup. All the changes that were made to the wireframe after the usability testing were incorporated within this stage as well. After designing the high-fidelity mockup, I constructed the clickable prototype.</p>
+                <a href="https://www.figma.com/file/OvkYPfAMytq13oyWUHruGs/Connect-Visit-Mockup-Portfolio" target="_blank" class="cs-link cs-link--mt">View Mockup</a>
+                <img alt="project image" src="./images/loft/minimal-dell.png">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- HIGH FIDELITY MOCKUPS -->
+    <section class="cs-mockup">
+        <div class="cs-container">
+            <div class="cs-snap-left">
+                <h2 class="cs-title">Usability Testing II</h2>
+                <p class="md">Another group of individuals participated in the second round of usability testing. All three potential users completed the five tasks successfully. However, two out of the three participants failed to correctly answer what the site was about within the first 30 seconds of being on the landing page. The participants focused first on pictures before looking at the words on a page, which explains why many designers place words on top of an image. This method is very effective because it forces the users to direct their attention to the text on a page.</p>
+                
+                <img alt="project image" src="./images/loft/minimal-dell-display-mockup.png">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SOLUTION -->
+    <section class="cs-solution">
+        <img class="cs-solution__img" alt="flower" src="./images/flower.png" />
+
+        <div class="cs-container">
+
+            <div class="cs-snap-right">
+                <h2 class="cs-title">Lesson Learned</h2>
+
+                <ul class="cs-list">
+                    <li>Users look at images before texts.</li>
+                    <li>Users don’t care to read much on a landing page; they mostly scan through it all.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="cs-container">
+            <div class="cs-snap-right">
+                <h3 class="cs-subtitle">Updates Made to High-Fidelity Mockup</h3>
+                <ul class="cs-list">
+                    <li>On the landing page, words with high importance were bolded.</li>
+                    <li>On the landing page, text describing The Loft was moved to the top of an image.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONCLUSION -->
+    <section class="cs-conclusion cs-bg-alt">
+        <div class="cs-container">
+            <div class="cs-snap-center">
+                <h2 class="cs-title">Conclusion</h2>
+                <p class="md">Though it would be nice to design a platform that surpasses the current competitors. The most important objective is to create something useful and meaningful. I hope to leave a mark and make a difference in the lives of others.</p>
+                <p class="md">There’s nothing more rewarding than knowing that via a platform such as The Loft, people are able to reconnect with family and friends during a pandemic where social distancing is crucial.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright ©2020 Wilza Aryeetey</p>
+    </footer>
+
+    
 </body>
-
 </html>

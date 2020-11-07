@@ -10,6 +10,10 @@
   grid-template-columns: repeat(12, 1fr);
 } */
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
   position: absolute;
   z-index: 100;
