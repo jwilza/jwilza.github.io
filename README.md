@@ -1,3 +1,4 @@
 # My Portfolio
 
-A showcase of my work from Thinkful's Product Design program.
+A Showcase of my work from Thinkful's Product Design program.
+
