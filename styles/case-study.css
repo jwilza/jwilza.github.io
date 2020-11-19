@@ -8,6 +8,10 @@
   margin-top: 0 !important;
 }
 
+ul.undecorated {
+  list-style: none;
+}
+
 .mt-14 {
   margin-top: 3.5rem !important;
 }
