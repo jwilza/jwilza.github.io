@@ -4,6 +4,41 @@
   box-sizing: border-box;
 }
 
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-14 {
+  margin-top: 3.5rem !important;
+}
+
+.cs-flex-images {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: flex-start;
+}
+
+.cs-flex {
+  display: flex;
+}
+
+.cs-flex-col {
+  flex-direction: column;
+}
+
+.cs-items-center {
+  align-items: center;
+}
+
+.cs-underline {
+  text-decoration: underline;
+}
+
+.bg-red {
+  background-color: red;
+}
+
 .cs {
   --x-padding: 50px;
   --section-padding: 150px 50px;
@@ -141,7 +176,12 @@
 }
 
 .cs-subtitle {
-  font-size: 2.4em;
+  font-size: 2.2em;
+  margin-bottom: 18px;
+}
+
+.cs-subtitle-sm {
+  font-size: 1.7em;
   margin-bottom: 18px;
 }
 
@@ -155,7 +195,6 @@
   border-width: 2px;
   border-style: solid;
   padding: 20px;
-  background-color: red;
 }
 
 .cs-list {
@@ -374,6 +413,17 @@ p.md {
   }
 }
 
+.cs-box {
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.cs-box.cs-subtitle {
+  margin-top: 0;
+}
+
 .cs-personas__persona {
   background-color: #fff;
   border-radius: 5px;
@@ -409,6 +459,11 @@ p.md {
   display: block;
 }
 
+.cs-personas__group h3 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
 .cs-personas__group h4 {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -421,8 +476,8 @@ p.md {
 
 .cs-personas__quote {
   font-style: italic;
-  font-weight: 400;
-  font-size: 1.2em;
+  font-weight: 600;
+  font-size: 1.4em;
   line-height: 1.5;
 }
 
@@ -432,6 +487,11 @@ p.md {
 
 @media (max-width: 850px) {
   .cs-personas__persona {
+    grid-template-columns: 1fr;
+    padding: 50px 25px;
+  }
+
+  .cs-box {
     grid-template-columns: 1fr;
     padding: 50px 25px;
   }
