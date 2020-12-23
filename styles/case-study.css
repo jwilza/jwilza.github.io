@@ -473,9 +473,10 @@ p.md {
   margin-bottom: 10px;
 }
 
+
 .cs-personas__group ul {
   line-height: 1.7;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 .cs-personas__quote {
@@ -487,6 +488,11 @@ p.md {
 
 .cs-personas__name {
   grid-row: 2 / 3;
+}
+
+.cs-personas__name h4 {
+  font-size: 2em;
+  font-weight: 900;
 }
 
 @media (max-width: 850px) {
